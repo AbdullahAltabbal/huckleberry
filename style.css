@@ -13,8 +13,19 @@ body {
 
 /* Add styles here! */
 
+.intro-chunk .title{
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.intro-chunk p{
+  font-size: 1.25rem;
+}
+
 .max-width-wrapper{
+  max-width: 800px;
  padding: 4rem;
+ margin: 0 24px;
 }
 
 header strong{
@@ -24,24 +35,27 @@ header strong{
 
 main{
   background-color: hsl(0deg, 0%, 60%);
-  border-top: 4px solid hsl(0deg, 0%, 40%);
+  padding: 96px 0;
 }
 
 .indented-heading{
-  padding: 8px 16px;
+  padding: 16px 32px;
   border-radius: 4px;
-  text-align: center;
-  border-bottom: solid hsl(45deg, 100%, 40%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
   background-color: hsl(45deg, 100%, 50%);
-  max-width: fit-content;
-  margin-left: -22px;
-  margin-top: 0px;
+  width: fit-content;
+  margin-left: -32px;
+  margin-top: -16px;
 }
 
 .card{
   background-color: white;
   border-bottom: 5px  solid hsl(0deg, 0%, 30%);
-  display: block;
-  padding: 16px;
+  padding: 24px;
+  margin: -24px;
   width: fit-content;
+}
+
+.card p:last-child{
+  margin-bottom: 0px;
 }
